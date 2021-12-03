@@ -1,0 +1,1271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+$color1: #FF5E14;
+$color2: #001659;
+$color3: #53545A;
+$color4: #fff;
+
+$font-family1: 'Roboto', sans-serif;
+
+// .container{
+//     width: 70%;
+// }
+
+// =============== header start here
+header{
+    .navbar{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: $color2;
+                        transition: .3s;
+    
+                        &:hover{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            button{
+                background-color: $color1;
+                border-radius: none !important;
+                color: $color4;
+                border: none;
+                padding: 1rem;
+                margin: 0 .2rem;
+                
+            }
+        }
+        .search-box{
+            border-radius: 3rem;
+            margin-right: .5rem;
+            transition: .5s;
+
+            &:hover .search-txt{
+                width: 200px;
+            }
+            &:hover {
+                border: 1px solid $color1;
+                padding: 0 10px;
+            }
+            .search-txt{
+                border: none;
+                outline: none;
+                width: 0px;
+            }
+            .search-btn{
+                color: $color2;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// =======================header end here
+
+// here section star here
+.banner{
+    margin-top: 5.5rem !important;
+    background: url('../image/Inner-banner.png') center center no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .text{
+        h1{
+            color: $color4;
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 5.5rem;
+        }
+        p{
+            font-size: 15px;
+            font-weight: bold;
+            color: $color1;
+            span{
+                color: $color4;
+            }
+        }
+    }
+    
+}
+// ======================= hero section end here
+
+// ============== about company section start here
+.about-company{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .text{
+        padding-top: 2rem;
+
+        h6{
+            color: $color1;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $font-family1;
+            
+        }
+        h2{
+            color: $color2;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 70px;
+            text-transform: uppercase;
+        }
+        .italic-text{
+            position: relative;
+            p{
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 500;
+                padding-left: 1rem;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 5px;
+                    height: 60px;
+                    background-color: $color1;
+                }
+            }
+        }
+        p{
+            line-height: 1.8rem;
+        }
+        button{
+            padding: 1.2rem 2.9rem;
+            background-color: $color1;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color4;
+            margin-top: 2.5rem;
+        }
+        
+    }
+}
+// ============== about company section start here
+
+// =========== counting section start 
+.counting{
+    background-color: $color2;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .text{
+        text-align: center;
+        border-right: 1.5px solid #53545A;
+        
+        h2{
+            color: $color1;
+            display: inline-block;
+            font-size: 3.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        span{
+            color: $color1;
+            font-size: 2.6rem;
+            font-weight: bold;
+        }
+        p{
+            color: $color4;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+    .text-sp{
+        border: none;
+    }
+}
+// =========== counting section end
+
+// ========== expertise section start 
+.expertise{
+    .text{
+
+        h6{
+            color: $color1;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $font-family1;
+            
+        }
+        h2{
+            color: $color2;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 70px;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 1.8rem;
+        }
+        .skills{
+            width: 100%;
+            .skill{
+                margin: 1rem auto;
+                .skill-name{
+                    color: $color2;
+                    line-height: 1.8rem;
+                    margin-bottom: .5rem;
+                }
+                .skill-bar{
+                    height: 10px;
+                    background-color: #dae1f7;
+                    border-radius: .5rem;
+                    .skill-per{
+                        height: 10px;
+                        background-color: $color1;
+                        border-radius: .5rem;
+                        width: 0;
+                        transition: 2s;
+                        position: relative;
+
+                        &::before{
+                            content: attr(per);
+                            position: absolute;
+                            top: -2.2rem;
+                            right: 12px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// ========= expertise section end
+
+// ========= skilled team section start 
+.skilled-team{
+    padding: 5rem 0;
+    .heading{
+        text-align: center;
+        h6{
+            color: $color1;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $font-family1;
+            text-transform: uppercase;
+        }
+        h2{
+            color: $color2;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 70px;
+            text-transform: uppercase;
+        }
+    }
+    .img{
+        position: relative;
+        img{
+            width: 100%;
+        }
+
+        .description{
+            background-color:$color4;
+            width: 85%;
+            margin: auto;
+            padding: 1rem;
+            transition: .5s;
+            border-bottom: 1px solid transparent;
+            align-items: center;
+            position: absolute;
+            bottom: -8%;
+            left: 7.3%;
+            &:hover{
+                border-bottom: 1px solid $color1;
+            }
+            .text{
+                p{
+                    margin-bottom: .3rem;
+                    text-transform: uppercase;
+                }
+                h4{
+                    text-transform: uppercase;
+                    color: $color2;
+                    font-weight: 800;
+                    letter-spacing: 1px;
+                    margin-bottom: 0;
+                }
+            }
+            .plus-sign{
+                margin-left: auto;
+                a{
+                    text-decoration: none;
+                    h1{
+                        color: $color1;
+                        font-weight: lighter;
+                        border: 1px solid $color1;
+                        margin-bottom: 0;
+                        padding: 0 10px;
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ========= skilled team section end
+
+// ======== brand section start 
+.brand{
+    margin: 5rem auto;
+    margin-top: 0;
+
+    .main-for-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// ==========brand section end
+
+// ========== footer start 
+footer{
+    background-color: $color2;
+    padding: 5rem 0;
+    padding-bottom: 8rem;
+
+    .main-for-flex{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            h4{
+                color: $color4;
+                margin-bottom: 2rem;
+            }
+            .little-flex{
+                display: flex;
+                padding-bottom: 1rem;
+                align-items: center;
+                .text{
+                    margin-left: .7rem;
+                    p{
+                        color: #ADB5CB;
+                        margin-bottom: .1rem;
+                    }
+                }
+            }
+        }
+        .item2{
+            ul{
+                list-style: none;
+                padding-left: 0;
+
+                li{
+                    padding-bottom: 1rem;
+                    a{
+                        text-decoration: none;
+                        color: #ADB5CB;
+                        transition: .3s;
+
+                        &:hover{
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ========== footer end
+.the-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: $color1;
+    margin-top: -100px;
+
+    .img{
+        flex-basis: 30%;
+    }
+    .text{
+        flex-basis: 30%;
+        p{
+            color:$color4;
+        }
+    }
+    .social{
+        flex-basis: 30%;
+        display: flex;
+        justify-content: flex-end;
+        span{
+            a{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: $color4;
+                text-align: center;
+                line-height: 40px;
+                margin-left: 15px;
+                transition: .3s;
+                text-decoration: none;
+                color: $color3;
+                &:hover{
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+// =========== footer end
+
+// ========= copyright start 
+.copyright{
+    padding: 1rem 0;
+
+    .container{
+        padding: 0;
+        .d-flex{
+            justify-content: space-between;
+
+            .item{
+                p{
+                    margin-bottom: 0;
+                    color: $color2;
+                }
+            }
+            .terms{
+                a{
+                   text-decoration: none;
+                   color: $color2;
+                   margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+// ========= copyright end
+
+// ======= sidebar start 
+.sidebar{
+    position: fixed;
+    top: 10%;
+    right: -30%;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    padding: 2rem;
+    transition: .7s;
+    opacity: 0;
+    
+    .nav{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        img{
+            width: 100%;
+        }
+
+    }
+}
+.show_menu{
+    right: 0;
+    opacity: 1;
+}
+// =========== sidebar end
+
+// ***************************** media query for 1150px to 1261px
+@media (min-width: 1200px) and (max-width: 1261px){
+    header{
+        .navbar{
+            .search-box{
+                &:hover .search-txt{
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+}
+// ******************** media query for 1162px to 1199px
+@media (min-width: 1162px) and (max-width: 1199px){
+    header{
+        .navbar{
+            .search-box{
+                &:hover .search-txt{
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+    .about-company{
+        .text{
+            padding-top: 0;
+            h2{
+                font-size: 2.5rem;
+            }
+            button{
+                margin-top: 0;
+            }
+        }
+    }
+    .expertise{
+        padding-top: 5rem !important;
+        padding-bottom: 0 !important;
+        .text{
+            h2{
+                line-height: normal;
+                font-size: 2.5rem;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// ********* media query for 1060px to 1161px
+@media (min-width: 1060px) and (max-width: 1161px){
+    header{
+        .navbar{
+            .search-box{
+                &:hover .search-txt{
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+    .about-company{
+        .text{
+            padding-top: 0;
+            h2{
+                font-size: 2.5rem;
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+            }
+        }
+    }
+    .expertise{
+        padding-top: 5rem !important;
+        padding-bottom: 0 !important;
+        .text{
+            h2{
+                line-height: normal;
+                font-size: 2.5rem;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar{
+        width: 45%;
+    }
+} 
+// ********** media query for 992px to 1059px
+@media (min-width: 992px) and (max-width: 1059px){
+    header{
+        .navbar{
+            .collapse{
+                .search-box{
+                    &:hover .search-txt{
+                        max-width: 80px;
+                    }
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .about-company{
+        .text{
+            padding-top: 2rem;
+            h2{
+                font-size: 2.5rem;
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+            }
+        }
+    }
+    .expertise{
+        padding-top: 5rem !important;
+        padding-bottom: 0 !important;
+        .text{
+            h2{
+                line-height: normal;
+                font-size: 2.5rem;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar{
+        width: 45%;
+    }
+}
+// *********** media query for 880px to 991px
+@media (min-width: 880px) and (max-width: 991px){
+    header{
+        .navbar{
+            .navbar-toggler{
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+            .collapse{
+                .search-box{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .about-company{
+        .text{
+            padding-top: 0;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+    .counting{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .text{
+            border: none;
+            margin-bottom: 1rem;
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .expertise{
+        .text{
+            padding-top: 0;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .skilled-team{
+        padding-top: 0;
+        .heading{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .img{
+            .description{
+                padding: .5rem;
+                .text{
+                    p{
+                        font-size: .8rem;
+                    }
+                    h4{
+                        font-size: 1.1rem;
+                        letter-spacing: 0;
+                    }
+                }
+                .plus-sign{
+                    a{
+                        h1{
+                            padding: 0 6px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .main-for-flex{
+            .item{
+                img{
+                    width: 90%;
+                }
+            }
+            .item3{
+                text-align: right;
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .the-box{
+        padding: 1rem;
+        .img{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+// ********** media query for 768px to 879px
+@media (min-width: 768px) and (max-width: 879px){
+    header{
+        .navbar{
+            .navbar-toggler{
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+            .collapse{
+                .search-box{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .about-company{
+        .text{
+            padding-top: 0;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+    .counting{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .text{
+            border: none;
+            margin-bottom: 1rem;
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .expertise{
+        .text{
+            padding-top: 0;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .skilled-team{
+        padding-top: 0;
+        .heading{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .img{
+            .description{
+                padding: .5rem;
+                .text{
+                    p{
+                        font-size: .8rem;
+                    }
+                    h4{
+                        font-size: 1.1rem;
+                        letter-spacing: 0;
+                    }
+                }
+                .plus-sign{
+                    a{
+                        h1{
+                            padding: 0 6px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .main-for-flex{
+            .item{
+                img{
+                    width: 90%;
+                }
+            }
+            .item3{
+                text-align: right;
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .the-box{
+        padding: 1rem;
+        .img{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+// ************ media query for 576px to 767px
+@media (min-width: 576px) and (max-width: 767px){
+    header{
+        .navbar{
+            .navbar-toggler{
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+            .collapse{
+                .search-box{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .banner{
+        .text{
+            h1{
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    .about-company{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        
+        .text{
+            padding-top: 2rem;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                    &::before{
+                        height: 45px;
+                    }
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+    .counting{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .text{
+            border: none;
+            margin-bottom: 1rem;
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .expertise{
+        .text{
+            padding-top: 0;
+            margin-bottom: 2.5rem;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .skilled-team{
+        padding-top: 0;
+        .row{
+            --bs-gutter-x: 0;
+            .heading{
+                h2{
+                    font-size: 2rem;
+                }
+            }
+            .img{
+                width: 85%;
+                margin: auto;
+                margin-bottom: 1.5rem;
+                .description{
+                    padding: .5rem;
+                    bottom: 0;
+                    .text{
+                        p{
+                            font-size: 1rem;
+                        }
+                        h4{
+                            font-size: 1.3rem;
+                            letter-spacing: 0;
+                        }
+                    }
+                    .plus-sign{
+                        a{
+                            h1{
+                                padding: 0 6px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .brand{
+        .main-for-flex{
+            flex-wrap: wrap;
+        }
+    }
+    footer{
+        .main-for-flex{
+            .item{
+                img{
+                    width: 90%;
+                }
+            }
+            .item3{
+                text-align: right;
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .the-box{
+        padding: 1rem;
+        .img{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+// *********** media query for 320px to 575px
+@media (min-width: 320px) and (max-width: 575px){
+    header{
+        .navbar{
+            padding-left: 0;
+            padding-right: 0;
+            .navbar-brand{
+                img{
+                    width: 80%;
+                }
+            }
+            .navbar-toggler{
+                border: none;
+                outline: none;
+                box-shadow: none;
+                img{
+                    width: 80%;
+                }
+            }
+            .collapse{
+                .search-box{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .banner{
+        margin-top: 4.5rem !important;
+        .text{
+            h1{
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    .about-company{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        
+        .text{
+            padding-top: 2rem;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1rem;
+                    line-height: normal;
+                    &::before{
+                        height: 50px;
+                    }
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            button{
+                margin-top: 0;
+                padding: .5rem 1rem;
+            }
+        }
+    }
+    .counting{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .text{
+            border: none;
+            margin-bottom: 1rem;
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .expertise{
+        .text{
+            padding-top: 0;
+            margin-bottom: 2.5rem;
+            h2{
+                line-height: normal;
+                font-size: 2rem;
+            }
+            .italic-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: normal;
+                }
+            }
+            p{
+                line-height: normal;
+            }
+            .skills{
+                .skill{
+                    margin: .5rem auto;
+                    .skill-name{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .skilled-team{
+        padding-top: 0;
+        padding-bottom: 2rem;
+        .row{
+            --bs-gutter-x: 0;
+            .heading{
+                h2{
+                    font-size: 2rem;
+                    line-height: normal;
+                }
+            }
+            .img{
+                width: 85%;
+                margin: auto;
+                margin-bottom: 1.5rem;
+                .description{
+                    padding: .5rem;
+                    bottom: 0;
+                    .text{
+                        p{
+                            font-size: 1rem;
+                        }
+                        h4{
+                            font-size: 1.3rem;
+                            letter-spacing: 0;
+                        }
+                    }
+                    .plus-sign{
+                        a{
+                            h1{
+                                padding: 0 6px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .brand{
+        .main-for-flex{
+            flex-wrap: wrap;
+            .brand-item{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    footer{
+        padding: 3rem 0;
+        margin-top: -2.5rem;
+        .main-for-flex{
+            flex-wrap: wrap;
+            .item{
+                img{
+                    width: 90%;
+                }
+            }
+            .item3{
+                text-align: right;
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .the-box{
+        display: none;
+    }
+    .copyright{
+        .d-flex{
+            flex-direction: column;
+            .item{
+                p{
+                    text-align: center;
+                }
+            }
+            .terms{
+                a{
+                    display: block;
+                }
+            }
+        }
+    }
+}
