@@ -27,3 +27,8 @@ $(document).ready(function(){
       $('.sidebar').toggleClass('show_menu');
     });
   });
+  // count up js
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
