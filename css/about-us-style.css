@@ -1007,8 +1007,9 @@ footer .main-for-flex .item2 ul li a:hover {
     padding-top: 2rem;
   }
   .about-company .text h2 {
-    line-height: normal;
+    line-height: 2.1rem;
     font-size: 2rem;
+    padding-bottom: .5rem;
   }
   .about-company .text .italic-text p {
     font-size: 1rem;
@@ -1019,9 +1020,10 @@ footer .main-for-flex .item2 ul li a:hover {
   }
   .about-company .text p {
     line-height: normal;
+    margin-top: .3rem;
   }
   .about-company .text button {
-    margin-top: 0;
+    margin-top: .5rem;
     padding: .5rem 1rem;
   }
   .counting {
@@ -1043,8 +1045,9 @@ footer .main-for-flex .item2 ul li a:hover {
     margin-bottom: 2.5rem;
   }
   .expertise .text h2 {
-    line-height: normal;
+    line-height: 2.1rem;
     font-size: 2rem;
+    margin: .7rem 0;
   }
   .expertise .text .italic-text p {
     font-size: 1.1rem;
